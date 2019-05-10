@@ -4,7 +4,7 @@ FROM ${BUILD_FROM}
 
 RUN apt-get update && apt-get -y install apt-transport-https wget ca-certificates apt-utils gnupg libzip4 libavahi-client3 libavahi-client-dev insserv
 RUN wget https://apt.homegear.eu/Release.key && apt-key add Release.key && rm Release.key
-RUN echo 'deb https://apt.homegear.eu/Raspbian/ stretch/' >> /etc/apt/sources.list.d/homegear.list
+RUN echo 'deb https://apt.homegear.eu/Debian/ stretch/' >> /etc/apt/sources.list.d/homegear.list
 RUN apt-get update && apt-get -y install ntp tzdata homegear homegear-management homegear-webssh homegear-adminui homegear-nodes-core homegear-nodes-extra homegear-homematicbidcos homegear-influxdb vim less htop
 RUN rm -f /etc/homegear/dh1024.pem
 RUN rm -f /etc/homegear/homegear.crt
