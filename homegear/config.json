@@ -3,7 +3,14 @@
   "version": "1.0",
   "slug": "homegear-homematic",
   "description": "Homegear for Homematic devices Hass.io add-on",
+  "url": "https://github.com/mondarko/hassio-custom-addons",
   "startup": "before",
+  "arch": [
+    "aarch64",
+    "amd64",
+    "armhf",
+    "i386"
+  ],
   "boot": "auto",
   "gpio": true,
   "privileged": [
