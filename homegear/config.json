@@ -1,6 +1,6 @@
 {
   "name": "Homegear for Homematic",
-  "version": "1.0",
+  "version": "1.1",
   "slug": "homegear-homematic",
   "description": "Homegear for Homematic devices Hass.io add-on",
   "url": "https://github.com/mondarko/hassio-custom-addons",
